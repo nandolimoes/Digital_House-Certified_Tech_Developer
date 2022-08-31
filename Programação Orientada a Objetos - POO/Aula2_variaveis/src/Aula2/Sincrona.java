@@ -1,6 +1,15 @@
 package Aula2;
 
+import java.util.Scanner;
+
 public class Sincrona {
+    static boolean ehDivisivel(int n1, int n2) {
+        if(n1 % n2 == 0) {
+            return true;
+        }
+        return false;
+    }
+
 
     public static void main(String[] args) {
         int num1 = 1;
@@ -38,6 +47,31 @@ public class Sincrona {
         for(int i=0; i <=5; i++) {
             System.out.println(i);
         }
+
+        String nome = "Fernando";
+
+        Integer numero1 = 10;
+        Integer numero2 = 30;
+
+        System.out.println(numero1.equals(9));
+
+        System.out.println(nome.charAt(1));
+
+        System.out.println(numero1.compareTo(numero2));
+        //resultado 1, 0, -1
+
+        Scanner sc = new Scanner(System.in);
+        //construtor, capturar o input do usuário
+
+        System.out.println(ehDivisivel(20,10));
+
+
+
+
+
+
+
+
     }
 
 }
