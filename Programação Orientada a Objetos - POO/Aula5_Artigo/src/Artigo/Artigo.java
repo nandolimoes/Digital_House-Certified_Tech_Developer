@@ -3,19 +3,36 @@ package Artigo;
 public class Artigo {
 
     private String descricao;
-    private double preco_venda;
+    private double precoVenda;
     private int estoque;
 
-    public Artigo(String descricao, int quantidade, double preco) {
+    public Artigo(String descricao, int estoque, double preco) {
         this.descricao = descricao;
-        this.preco_venda = preco;
-        this.estoque = quantidade;
+        this.precoVenda = preco;
+        this.estoque = estoque;
+
 
     }
-    public boolean temEstoque() {
-        return estoque;
+
+    public void setDescricao(String Descricao) {
+        this.descricao = descricao;
     }
-    public double consultarPreco() {
-        return preco_venda;
+
+    public String getDescricao(){
+        return descricao;
     }
+
+    public boolean existeEstoque(){
+        return estoque > 0;
+    }
+
+    public double consultarPreco(){
+        return precoVenda;
+    }
+
+
+
+
+
+
 }
